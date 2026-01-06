@@ -177,6 +177,7 @@ function renderForm(data) {
   }
 
   entries.forEach(({ key, value }) => {
+    if(key == "product") return;
     const row = document.createElement("div");
     row.className = "row";
 
